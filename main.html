@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Розклад</title>
+<meta charset ="utf-8" >
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
+
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <script type="text/javascript" src="js/materialize.min.js"></script>    
+</head>
+    
+    <body>
+
+  <nav id="top">
+    <div class="nav-wrapper">
+ <a href="#!" class="brand-logo center"> <i class="material-icons">Роозклаад</i> </a>
+      <ul >
+        <li id="lang_less" class="left"><a>Іноземні</a></li>
+        <li id="it_less" class="right"><a>Цифрові</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <div id="loader" class="progress">
+      <div class="indeterminate"></div>
+  </div>
+
+<aside>    
+
+<button id="home"  class="waves-effect waves-light" ><i class="material-icons">home</i></button>
+
+    <div class="day" id="sun">Неділя</div>
+    <div class="day" id="mon">Понеділок</div>
+    
+    <div class="day" id="tue">Вівторок</div>
+    <div class="day" id="wed">Середа</div>
+    
+    <div class="day" id="thu">Четвер</div>
+    <div class="day" id="fri">П'ятниця</div>
+    
+    <div class="day" id="sat">Субота</div>
+</aside>    
+
+
+
+
+<!-- Рокзклад на понеділок -->
+    
+<div class="less_area" id="mon_area">
+
+<div class="lesson" id="first_less_mon">
+1. Здоровий і спокійний сон   
+</div>
+
+<div class="lesson" id="second_less_mon">
+2. Фізичне виховання  <i id="edit" class="material-icons">edit</i>
+</div>
+
+<div class="lesson" id="third_less_mon">
+3. Практ. граматика
+</div>
+
+<div class="lesson" id="first_less_mon">
+4. ПУМ
+</div>
+
+
+<!--
+<input id="input" class="inp_lesson" placeholder="Назва дисципліни">
+<a id="add" class="btn-floating btn waves-effect waves-light red"><i class="material-icons">add</i></a>
+-->
+</div>    
+ 
+ <!-- Розклад на вівторок -->
+<div class="less_area" id="tue_area">
+
+<div class="lesson" id="first_less_mon">
+1. Практика усного і писемного мовлення цікаво на скільки багато тут модна писати. Поки екран не закінчиться? Хахаа виходить, що так і є 😂😂😂😂😂. Хоча і тоді модна буде пистаи ще і ще і ще і ще і ще і ще і ще і ще і....незнаю що ще написати для тесту!зочеться щоб грано було, а не белькотня якась
+</div>
+
+<div class="lesson" id="second_less_mon">
+2. Історія і культура України  <i class="material-icons">edit</i>
+</div>
+
+<div class="lesson" id="third_less_mon">
+3. Основи пед. майстерності
+</div>
+
+<div class="lesson" id="first_less_mon">
+4. Основи пед. майстерності
+</div>
+
+
+ 
+</div>
+ 
+
+<!-- Рокзклад на середу -->
+<div class="less_area" id="wed_area">
+
+<div class="lesson" id="first_less_mon">
+1. Психологія
+</div>
+
+<div class="lesson" id="second_less_mon">
+2. Практ. фонетика  <i class="material-icons">edit</i>
+</div>
+
+<div class="lesson" id="third_less_mon">
+3. Практ. граматика
+</div>
+
+<div class="lesson" id="first_less_mon">
+4. Історія і культура України
+</div>
+
+<div class="lesson" id="first_less_mon">
+5. ПУМ Пурум 
+</div>
+
+ 
+</div>
+
+
+
+<!-- Розклад на четвер -->
+<div class="less_area" id="thu_area">
+
+<div class="lesson" id="first_less_mon">
+1. -    
+</div>
+
+<div class="lesson" id="second_less_mon">
+2. Вікова фізіологія  <i class="material-icons">edit</i>
+</div>
+
+<div class="lesson" id="third_less_mon">
+3. -
+</div>
+
+<div class="lesson" id="first_less_mon">
+4. ПУМ
+</div>
+
+<div class="lesson" id="first_less_mon">
+5. ПУМ Пурум 
+</div>
+
+ 
+</div>
+
+
+<!-- Розклад на п'ятницю -->
+
+<div class="less_area" id="fri_area">
+
+<div class="lesson" id="first_less_mon">
+1. ПУМ
+</div>
+
+<div class="lesson" id="second_less_mon">
+2. Практ. фонетика  <i class="material-icons">edit</i>
+</div>
+
+<div class="lesson" id="third_less_mon">
+3. Істор. зарубіжної літератури
+</div>
+
+<div class="lesson" id="first_less_mon">
+4. Охорона праці
+</div>
+
+<div class="lesson" id="first_less_mon">
+5. ПУМ Пурум 
+</div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+ 
+ 
+     
+    
+    
+<style>
+#top{
+background:orange;
+} 
+#lang_less{
+position:absolute;
+left:7%;
+}
+#it_less{
+position:absolute;
+right:7%;
+}
+#home{
+position:absolute;
+bottom:1%;
+left:50%;
+width:20%;
+height:5%;
+left:40%;
+background:#f4511e;
+outline:none;
+border:none;
+border-radius:5px;
+color:#fff;
+}
+  
+#loader{
+position:absolute;
+bottom:1%; 
+}
+
+#input{
+position:absolute;
+bottom:5%;
+left:7%;
+width:75%;
+
+}
+#add{
+position:absolute;
+bottom:5%;
+right:5%;
+}
+
+a{
+font-size:26px;
+}
+
+aside{
+position:absolute;
+top:12%;
+left:5%;
+width:90%;
+height:85%;
+background:orange;
+color:#fff;
+border-radius:5px;
+break-word:true;
+
+}
+aside::before {
+content: '';
+position: absolute;
+top:-3%;
+left: 7%;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 45px 45px 45px;
+border-color: transparent transparent orange transparent;
+transform: translateX(-20%);
+
+}
+
+.day{
+position:absolute;
+left:10%;
+width:80%;
+text-align:center;
+background:#33691e;
+border-radius:5px;
+font-size:20px;
+}
+#sun{
+top:1%;
+display:none;
+}
+#mon{
+top:5%;
+}
+#tue{
+top:25%;
+}
+#wed{
+top:45%;
+}
+#thu{
+top:65%;
+}
+#fri{
+top:85%;
+}
+#sat{
+top:80%;
+display:none;
+}
+
+.less_area{
+position:absolute;
+top:22%;
+left:5%;
+width:86%;
+height:68%;
+display:none;
+overflow:auto;
+}
+
+
+.lesson{
+margin:25px;
+width:90%;
+max-height:40%;
+min-height:8%;
+text-align:left;
+background:#33691e;
+color:#fff;
+border-radius:5px;
+font-size:20px;
+overflow:auto;
+}
+
+#edit{
+color: #3fb6b2;
+}
+
+ @keyframes hide{
+        
+        0%{ } 
+        95%{ transform: scale(0.01); translateY(-100%);}    
+        100%{transform:  scale(0);}
+        
+             
+        }
+
+ @keyframes show{
+        
+        0%{transform:scale(0); }
+        
+        100%{transform:scale(1); }
+             
+        }
+
+
+</style>    
+    
+    
+<script>
+window.addEventListener("load", function(){
+
+let loader = document.getElementById("loader")
+
+setTimeout(function(){
+loader.style.display = "none"
+},1000)
+
+let home = document.getElementById("home")
+
+let sun = document.getElementById("sun");
+let mon = document.getElementById("mon");
+
+let tue = document.getElementById("tue");
+let wed = document.getElementById("wed");
+
+let thu = document.getElementById("thu");
+let fri = document.getElementById("fri");
+
+let sat = document.getElementById("sat");
+
+let mon_area = document.getElementById("mon_area")
+let tue_area = document.getElementById("tue_area")
+let wed_area = document.getElementById("wed_area")
+let thu_area = document.getElementById("thu_area")
+let fri_area = document.getElementById("fri_area")
+
+
+home.addEventListener("click",function(){
+mon.style.top = "5%"
+tue.style.top = "25%"
+
+wed.style.top = "45%"
+thu.style.top = "65%"
+
+fri.style.top = "85%"
+
+
+mon.style.animation = "show 0.5s"
+tue.style.animation = "show 0.5s"
+
+wed.style.animation = "show 0.5s"
+thu.style.animation = "show 0.5s"
+
+fri.style.animation = "show 0.5s"
+sat.style.animation = "show 0.5s"
+sun.style.animation = "show 0.5s"
+
+mon_area.style.animation = "hide 0.5s"
+tue_area.style.animation = "hide 0.5s"
+wed_area.style.animation = "hide 0.5s"
+thu_area.style.animation = "hide 0.5s"
+fri_area.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+
+mon.style.display = "inline"
+tue.style.display = "inline"
+
+wed.style.display = "inline"
+thu.style.display = "inline"
+
+fri.style.display = "inline"
+
+mon_area.style.display = "none"
+tue_area.style.display = "none"
+wed_area.style.display = "none"
+thu_area.style.display = "none"
+fri_area.style.display = "none"
+    
+
+// sat.style.display = "inline" 
+// sun.style.display = "inline" 
+
+
+},490)
+
+})
+
+
+/*hide all except mon */
+mon.addEventListener("click", function(){
+
+mon_area.style.display = "inline"
+mon_area.style.animation = "show 0.5s"
+    
+sun.style.animation = "hide 0.5s"
+tue.style.animation = "hide 0.5s"
+
+wed.style.animation = "hide 0.5s"
+thu.style.animation = "hide 0.5s"
+
+fri.style.animation = "hide 0.5s"
+sat.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+    sun.style.display = "none"
+    tue.style.display = "none"
+
+    wed.style.display = "none"
+    thu.style.display = "none"
+
+    fri.style.display = "none"
+    sat.style.display = "none"    
+    
+},500)
+
+})
+
+
+
+/*hide all except tue */
+tue.addEventListener("click", function(){
+tue.style.top = "5%"
+tue_area.style.animation = "show 0.5s"
+
+mon.style.animation = "hide 0.5s"
+sun.style.animation = "hide 0.5s"
+
+wed.style.animation = "hide 0.5s"
+thu.style.animation = "hide 0.5s"
+
+fri.style.animation = "hide 0.5s"
+sat.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+tue_area.style.display = "inline"
+
+    mon.style.display = "none"
+    sun.style.display = "none"
+
+    wed.style.display = "none"
+    thu.style.display = "none"
+
+    fri.style.display = "none"
+    sat.style.display = "none"    
+    
+},500)
+
+})
+
+
+/*hide all except wed */
+wed.addEventListener("click", function(){
+wed.style.top = "5%"
+wed_area.style.display = "inline"
+wed_area.style.animation = "show 0.5s"
+
+mon.style.animation = "hide 0.5s"
+tue.style.animation = "hide 0.5s"
+
+sun.style.animation = "hide 0.5s"
+thu.style.animation = "hide 0.5s"
+
+fri.style.animation = "hide 0.5s"
+sat.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+    mon.style.display = "none"
+    tue.style.display = "none"
+
+    sun.style.display = "none"
+    thu.style.display = "none"
+
+    fri.style.display = "none"
+    sat.style.display = "none"    
+    
+},500)
+
+})
+
+
+/*hide all except thu */
+thu.addEventListener("click", function(){
+thu.style.top = "5%"
+thu_area.style.display = "inline"
+thu_area.style.animation = "show 0.5s"
+
+mon.style.animation = "hide 0.5s"
+tue.style.animation = "hide 0.5s"
+
+wed.style.animation = "hide 0.5s"
+sun.style.animation = "hide 0.5s"
+
+fri.style.animation = "hide 0.5s"
+sat.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+    mon.style.display = "none"
+    tue.style.display = "none"
+
+    wed.style.display = "none"
+    sun.style.display = "none"
+
+    fri.style.display = "none"
+    sat.style.display = "none"    
+    
+},500)
+
+})
+
+
+/*hide all except fri */
+fri.addEventListener("click", function(){
+fri.style.top = "5%"
+fri_area.style.display = "inline"
+fri_area.style.animation = "show 0.5s"
+
+mon.style.animation = "hide 0.5s"
+tue.style.animation = "hide 0.5s"
+
+wed.style.animation = "hide 0.5s"
+thu.style.animation = "hide 0.5s"
+
+sun.style.animation = "hide 0.5s"
+sat.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+    mon.style.display = "none"
+    tue.style.display = "none"
+
+    wed.style.display = "none"
+    thu.style.display = "none"
+
+    sun.style.display = "none"
+    sat.style.display = "none"    
+    
+},500)
+
+})
+
+
+/*hide all except sat */
+sat.addEventListener("click", function(){
+mon.style.animation = "hide 0.5s"
+tue.style.animation = "hide 0.5s"
+
+wed.style.animation = "hide 0.5s"
+thu.style.animation = "hide 0.5s"
+
+fri.style.animation = "hide 0.5s"
+sun.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+    mon.style.display = "none"
+    tue.style.display = "none"
+
+    wed.style.display = "none"
+    thu.style.display = "none"
+
+    fri.style.display = "none"
+    sun.style.display = "none"    
+    
+},500)
+
+})
+/*hide all except sun */
+sun.addEventListener("click", function(){
+mon.style.animation = "hide 0.5s"
+tue.style.animation = "hide 0.5s"
+
+wed.style.animation = "hide 0.5s"
+thu.style.animation = "hide 0.5s"
+
+fri.style.animation = "hide 0.5s"
+sat.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+
+    mon.style.display = "none"
+    tue.style.display = "none"
+
+    wed.style.display = "none"
+    thu.style.display = "none"
+
+    fri.style.display = "none"
+    sat.style.display = "none"    
+    
+},400)
+
+})
+
+
+
+})    
+    
+    
+</script>
+    
+    
+    </body>
+    
+</html>
