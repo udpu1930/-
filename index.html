@@ -11,7 +11,7 @@
 
 <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -352,7 +352,13 @@ color: #3fb6b2;
 window.addEventListener("load", function(){
         
 alert("Привіт! Дякую, що відвідали мій сайт! Він буде щотижня оновлюватись.")
-
+Swal.fire({
+    type: 'info',
+    title: 'Оновленя!',
+    text: "Оновлено дизайн повідомленнь"        
+})
+        
+        
 let loader = document.getElementById("loader")
 
 setTimeout(function(){
