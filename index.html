@@ -50,6 +50,11 @@
 
 <button id="home"  class="waves-effect waves-light" ><i class="material-icons">home</i></button>
 
+<button id="news" class="waves-effect waves-light"><i class="material-icons">today</i></button>
+
+<button id="list" class="waves-effect waves-light"><i class="material-icons">list</i></button>
+
+
     <div class="day" id="sun">Неділя</div>
     <div class="day" id="mon">Понеділок</div>
     
@@ -375,6 +380,8 @@ loader.style.display = "none"
 },1000)
 
 let home = document.getElementById("home")
+let news = document.getElementById("news") 
+let list = document.getElementById("list") 
 
 let sun = document.getElementById("sun");
 let mon = document.getElementById("mon");
@@ -392,7 +399,6 @@ let tue_area = document.getElementById("tue_area")
 let wed_area = document.getElementById("wed_area")
 let thu_area = document.getElementById("thu_area")
 let fri_area = document.getElementById("fri_area")
-
 
 home.addEventListener("click",function(){
 mon.style.top = "5%"
@@ -445,6 +451,21 @@ fri_area.style.display = "none"
 
 })
 
+
+list.addEventListener("clcik",function(){
+Swal.fire({
+    type: 'warning',
+    title: 'Зачекай',
+    text: "Ця секція буде скоро буде доступна. "        
+})
+} 
+news.addEventListener("clcik",function(){
+Swal.fire({
+    type: 'warning',
+    title: 'Зачекай',
+    text: "Ця секція буде скоро буде доступна. "        
+})
+} 
 
 /*hide all except mon */
 mon.addEventListener("click", function(){
