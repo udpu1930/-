@@ -2,32 +2,27 @@
 <html>
 <head>
         <title>Розклад</title>
-<link rel=”shortcut icon” href=”https://web.kpi.kharkov.ua/nanochem/wp-content/uploads/sites/126/2015/01/calendar-icon-300x300.png” type=”image/x-icon”>
-<link rel=”icon” href=”https://web.kpi.kharkov.ua/nanochem/wp-content/uploads/sites/126/2015/01/calendar-icon-300x300.png” type=”image/x-icon”>
+    <meta charset ="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<script src="https://iplogger.org/2FkCv5" ></script>
-
-
-<meta charset ="utf-8" >
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+    <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link href="https://cdn.jsdelivr.net/gh/vikkycreations/alertify/dist/alertify.min.css" type="text/css" rel="stylesheet">
+    <script src="//instant.page/5.1.0" type="module" integrity="https://cdn.jsdelivr.net/gh/vikkycreations/alertify/dist/alertify.min.js"></script>
 
-<script src="https://api.telegram.org/bot1112971096:AAFWFi5PYyMX_KLcXl11qV0he0RbvL9LxvQ/sendMessage?chat_id=392875045&text= Відвідано сайт udpu1930!! ">                    
-</script> 
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <script type="text/javascript" src="js/materialize.min.js"></script>    
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+      <script type="text/javascript" src="js/materialize.min.js"></script>    
+      
+      
 </head>
     
     <body>
@@ -37,7 +32,7 @@
  <a href="#!" class="brand-logo center"> <i class="material-icons">Роозклаад</i> </a>
       <ul >
         <li id="lang_less" class="left"><a>Іноземні</a></li>
-        <li id="it_less" class="right"><a>Цифрові</a></li>
+        <a href="https://udpu1930.github.io/Lessons-schedule/"><li id="it_less" class="right"><i class="material-icons">replay</i></li></a>
       </ul>
     </div>
   </nav>
@@ -55,6 +50,8 @@
 <button id="list" class="waves-effect waves-light"><i class="material-icons">list</i></button>
 
 
+
+
     <div class="day" id="sun">Неділя</div>
     <div class="day" id="mon">Понеділок</div>
     
@@ -65,6 +62,7 @@
     <div class="day" id="fri">П'ятниця</div>
     
     <div class="day" id="sat">Субота</div>
+    
 </aside>    
 
 
@@ -222,17 +220,15 @@ right:7%;
 #home{
 position:absolute;
 bottom:1%;
-left:50%;
+left:40%;
 width:20%;
 height:5%;
-left:40%;
 background:#f4511e;
 outline:none;
 border:none;
 border-radius:5px;
 color:#fff;
 }
-
 #news{
 position:absolute;
 bottom:1%;
@@ -259,6 +255,8 @@ border-radius:5px;
 color:#fff;    
 } 
  
+ 
+  
 #loader{
 position:absolute;
 bottom:1%; 
@@ -391,14 +389,16 @@ color: #3fb6b2;
     
 <script>
 window.addEventListener("load", function(){
-        
+
+
 Swal.fire({
     type: 'info',
     title: 'Оновленя!',
-    text: "Оновлено дизайн повідомлень.\n В середу буде наступне оновлення. "        
+    text: "Додано секцію 'Події' та 'Список групи'"  
 })
-        
-        
+            
+
+
 let loader = document.getElementById("loader")
 
 setTimeout(function(){
@@ -406,8 +406,8 @@ loader.style.display = "none"
 },1000)
 
 let home = document.getElementById("home")
-let news = document.getElementById("news") 
-let list = document.getElementById("list") 
+let list = document.getElementById("list")
+let news = document.getElementById("news")
 
 let sun = document.getElementById("sun");
 let mon = document.getElementById("mon");
@@ -432,9 +432,7 @@ tue.style.top = "25%"
 
 wed.style.top = "45%"
 thu.style.top = "65%"
-
 fri.style.top = "85%"
-
 
 mon.style.animation = "show 0.5s"
 tue.style.animation = "show 0.5s"
@@ -472,30 +470,41 @@ fri_area.style.display = "none"
 // sat.style.display = "inline" 
 // sun.style.display = "inline" 
 
-
 },490)
 
 })
 
 
-list.addEventListener("clcik",function(){
-Swal.fire({
-    type: 'warning',
-    title: 'Зачекай',
-    text: "Ця секція буде скоро буде доступна. "        
-})
-} 
-news.addEventListener("clcik",function(){
-Swal.fire({
-    type: 'warning',
-    title: 'Зачекай',
-    text: "Ця секція буде скоро буде доступна. "        
-})
-} 
 
+list.addEventListener("click",function(){
+  
+  Swal.fire({
+    type: 'info',
+    title: 'Зачекай!',
+    text: "Скоро буде оновлення."  
+})  
+    
+})
+
+
+news.addEventListener("click",function(){
+  
+  Swal.fire({
+    type: 'info',
+    title: 'Зачекай!',
+    text: "Скоро буде оновлення."  
+})  
+    
+})
+
+
+
+
+                
 /*hide all except mon */
 mon.addEventListener("click", function(){
-
+    
+function mond(){
 mon_area.style.display = "inline"
 mon_area.style.animation = "show 0.5s"
     
@@ -519,11 +528,15 @@ setTimeout(function(){
     sat.style.display = "none"    
     
 },500)
-
+}
+mond();
 })
+
+
 
 /*hide all except tue */
 tue.addEventListener("click", function(){
+function tued(){
 tue.style.top = "5%"
 tue_area.style.animation = "show 0.5s"
 
@@ -549,12 +562,17 @@ tue_area.style.display = "inline"
     sat.style.display = "none"    
     
 },500)
-
+}
+tued();
 })
+
+
 
 
 /*hide all except wed */
 wed.addEventListener("click", function(){
+function wedd(){
+    
 wed.style.top = "5%"
 wed_area.style.display = "inline"
 wed_area.style.animation = "show 0.5s"
@@ -579,12 +597,17 @@ setTimeout(function(){
     sat.style.display = "none"    
     
 },500)
-
+}
+wedd();
 })
+
+
 
 
 /*hide all except thu */
 thu.addEventListener("click", function(){
+function thud(){
+
 thu.style.top = "5%"
 thu_area.style.display = "inline"
 thu_area.style.animation = "show 0.5s"
@@ -609,12 +632,17 @@ setTimeout(function(){
     sat.style.display = "none"    
     
 },500)
-
+}
+thud();
 })
+
+
 
 
 /*hide all except fri */
 fri.addEventListener("click", function(){
+function frid(){
+    
 fri.style.top = "5%"
 fri_area.style.display = "inline"
 fri_area.style.animation = "show 0.5s"
@@ -639,8 +667,12 @@ setTimeout(function(){
     sat.style.display = "none"    
     
 },500)
-
+}
+frid();
 })
+
+
+
 
 
 /*hide all except sat */
@@ -692,6 +724,7 @@ setTimeout(function(){
 },400)
 
 })
+
 
 
 
