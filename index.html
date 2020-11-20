@@ -5,6 +5,9 @@
     <meta charset ="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+
+    <!-- <script src="https://api.telegram.org/bot1112971096:AAFWFi5PYyMX_KLcXl11qV0he0RbvL9LxvQ/sendMessage?chat_id=392875045&<text>=Сайт udpu1930 відвідано!"></script> -->
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -13,23 +16,29 @@
 
     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
-    <link href="https://cdn.jsdelivr.net/gh/vikkycreations/alertify/dist/alertify.min.css" type="text/css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/gh/vikkycreations/alertify/dist/alertify.min.css" type="text/css" rel="stylesheet">
     <script src="//instant.page/5.1.0" type="module" integrity="https://cdn.jsdelivr.net/gh/vikkycreations/alertify/dist/alertify.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link href="lib/noty.css" rel="stylesheet">
+    <script src="lib/noty.js" type=text/javascript"></script>
+
+<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
       <script type="text/javascript" src="js/materialize.min.js"></script>    
-      
-      
+          
 </head>
-    
-    <body>
+   
 
+<body>
   <nav id="top">
     <div class="nav-wrapper">
- <a href="#!" class="brand-logo center"> <i class="material-icons">Роозклаад</i> </a>
+ <a href="https://udpu1930.github.io/Lessons-schedule/" class=" center"><i class="material-icons">replay</i> </a>
       <ul >
         <li id="lang_less" class="left"><a>Іноземні</a></li>
         <a href="https://udpu1930.github.io/Lessons-schedule/"><li id="it_less" class="right"><i class="material-icons">replay</i></li></a>
@@ -41,30 +50,109 @@
       <div class="indeterminate"></div>
   </div>
 
-<aside>    
+<aside class="aside" id="home_area" >    
 
 <button id="home"  class="waves-effect waves-light" ><i class="material-icons">home</i></button>
 
 <button id="news" class="waves-effect waves-light"><i class="material-icons">today</i></button>
 
+
 <button id="list" class="waves-effect waves-light"><i class="material-icons">list</i></button>
-
-
-
-
-    <div class="day" id="sun">Неділя</div>
-    <div class="day" id="mon">Понеділок</div>
+    <p class="day" id="sun">Неділя</p>
+    <p class="day" id="mon">Понеділок</p>
     
-    <div class="day" id="tue">Вівторок</div>
-    <div class="day" id="wed">Середа</div>
+    <p class="day" id="tue">Вівторок</p>
+    <p class="day" id="wed">Середа</p>
     
-    <div class="day" id="thu">Четвер</div>
-    <div class="day" id="fri">П'ятниця</div>
+    <p class="day" id="thu">Четвер</p>
+    <p class="day" id="fri">П'ятниця</p>
     
-    <div class="day" id="sat">Субота</div>
-    
+    <p class="day" id="sat">Субота</p>    
 </aside>    
 
+
+<div class="aside" id="list_area">
+    <div class="close"><i id="close_list" class="material-icons">close</i></div> 
+<list id="group_list_area">
+    <div class="group_mate">1.Богулський Віктор</div>
+    <div class="group_mate">2.Василько Анна</div>
+
+    <div class="group_mate">3.Дубровіна Анастасія</div>
+    <div class="group_mate">4.Комар Денис</div>
+
+    <div class="group_mate">5.Кравченко Богдан</div>
+    <div class="group_mate">6.Лещенко Анастасія</div>    
+
+    <div class="group_mate">7.Розгон Вероніка</div>
+    <div class="group_mate">8.Смагло Аріадна</div>
+
+    <div class="group_mate">9.Степанюк Максим</div>
+    <div class="group_mate">10.Терещук Григорій</div>
+
+    <div class="group_mate">11.Тесліченко Анна</div>
+    <div class="group_mate">12.Чернега Михайло</div>
+</list>
+
+</div>
+
+
+
+<div class="aside" id="news_area">
+<div class="close"><i id="close_news" class="material-icons">close</i></div> 
+
+    <div class="news_elem" id="one">
+        <img src="https://static4.depositphotos.com/1005076/333/i/600/depositphotos_3339799-stock-photo-red-eurasian-squirrel.jpg">
+        <text>
+        <strong> 2020.11.21 <br> 
+        <h5>#2 Новини з минулого!</h5> </strong> 
+        <br> Денис Комар отримав почесне звання "Алкомен".
+        <br>©Терешук Григорій
+        
+        </text>
+    </div>
+
+    <div class="news_elem" id="two">
+        <img src="https://lh3.googleusercontent.com/proxy/kSLgu4srvaG0bgQzgeuvjrp_YEU09-RIokECPEP0PIwVQRP88gaqISs34UbfIadlx1imgcFVEwzebitTVSYDnB2GqO8f">
+
+        <text>
+        <strong>2020.11.20 <br> <h5>#1 Правила публікації на udpu1930.</h5> </strong> 
+        <br> При дотриманні всіх умов, публікація опинится на сайті протягом 24 годин з моменту усного або письмового підтвердежння модератором сайту того, що стаття чи новина має нижче перераховані риси.
+        <br>1. Публікація повинна нести в собі зміст, що вся група(далі стая) вважає актуальним. Якщо староста (далі вожак стаї або вожак) вважає, що новина може негативно вплинути на репутацію групи то така стаття(новина) не буде опублікована.
+<br>2. В статті не повинні висміюватись члени стаї. Якщо в публікації ідеться про одного із члена стаї то така стаття буде опублікована <big>лише</big> за згоди особистості про яку ідеться або вожака.
+<br>3. Якщо модератор сайту буде не згоден з рішенням вожака з приводу публікації новини то може накласти вето в результаті чого проведеться голосування і стая вирішить чи варто публікувати новину.
+<br>4. Публікація може бути  написана лише такими мовами: 
+<ul>
+<li>Українська.</li>    
+<li>Англійська.</li>
+<li>Французька.</li>
+<li>Німецька.</li>
+<li>Іспанська.</li>
+<li>Японська(я не сексіст, але бажано катаканою).</li>
+<li>Китайська(всі діалекти).</li>
+<li>Арабська(орієнтація тексту з права на ліво буде враховуватись)</li>
+<li>Єврит</li>
+<li>Будь-яка інша мова, що існує в світі, окрім російської.</li>
+</ul>
+<br>5. Публікація не повнинна суперчити конституції України.
+<br>PS Правила будуть доповнюватись.
+        </text>
+
+    </div>
+
+
+    <div class="news_elem" id="three">
+        <img src="https://glavcom.ua/img/article/6839/90_main.jpg">
+        <text>
+        <strong> 2020.11.20 <br> 
+        <h5>#0 Сайт udpu1930!</h5> </strong> 
+        <br> "Трудився. Старався. Сайт нарешті виглядає приблизно так я уявляв. <br>Сподіваюсь, що ним хтось буде користуватись і буде сенц розвивати його далі. Дякую 12-й групі за допомогу в розробці!❤️"
+    <br>©Терешук Григорій
+    
+        </text>
+    </div>
+
+
+</div>
 
 
 
@@ -73,22 +161,22 @@
 <div class="less_area" id="mon_area">
 
 <div class="lesson" id="first_less_mon">
-1. Здоровий і спокійний сон   <br>
+1. Здоровий і спокійний сон <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 22:00-8:00
 </div>
 
 <div class="lesson" id="second_less_mon">
-2. Фізичне виховання <br>
+2. Фізичне виховання<a href="" class="material-icons">link</a><br>
 9:35-10:55
 </div>
 
 <div class="lesson" id="third_less_mon">
-3. Практ. граматика <br>
+3. Практ. граматика <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 11:15-12:35
 </div>
 
 <div class="lesson" id="first_less_mon">
-4. ПУМ <br>
+4. ПУПМ <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 12:50-14:10
 </div>
 
@@ -103,22 +191,23 @@
 <div class="less_area" id="tue_area">
 
 <div class="lesson" id="first_less_mon">
-1. Практика усного і писемного мовлення <br>
+1. ПУПМ <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 8:00-9:20
 </div>
 
 <div class="lesson" id="second_less_mon">
-2. Історія і культура України <br>
+2. Історія і культура України <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 9:35-10:55
 </div>
 
-<div class="lesson" id="third_less_mon">
-3. Основи пед. майстерності <br>
+<div class="lesson" id="third_less_tue">
+3. Основи пед. майстерності <a href="" class="material-icons">link</a> <a href="https://meet.google.com/djf-phiw-zsq" class="material-icons">voice_chat</a><br>
 11:15-12:35
+<!-- <div id="triangle"></div> -->
 </div>
 
-<div class="lesson" id="first_less_mon">
-4. Основи пед. майстерності <br>
+<div class="lesson" id="last_less_tue">
+4. Основи пед. майстерності <a href="" class="material-icons">link</a> <br>
 12:50-14:10
 </div>
 
@@ -131,22 +220,22 @@
 <div class="less_area" id="wed_area">
 
 <div class="lesson" id="first_less_mon">
-1. Психологія <br>
+1. Психологія <a href="" class="material-icons">link</a> <a href="" class="material-icons">support</a><br>
 8:00-9:20
 </div>
 
 <div class="lesson" id="second_less_mon">
-2. Практ. фонетика <br>
+2. Практ. фонетика <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 9:35-10:55
 </div>
 
 <div class="lesson" id="third_less_mon">
-3. Практ. граматика <br>
+3. Практ. граматика <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 11:15-12:35
 </div>
 
 <div class="lesson" id="first_less_mon">
-4. Історія і культура України <br>
+4. Історія і культура України <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 12:50-14:10                        
 </div>
  
@@ -162,17 +251,17 @@
 </div>
 
 <div class="lesson" id="second_less_mon">
-2. Вікова фізіологія <br>
+2. Вікова фізіологія <a href="" class="material-icons">link</a><br>
 9:35-10:55
 </div>
 
 <div class="lesson" id="third_less_mon">
-3. БЖД <br>
+3. БЖД <a href="" class="material-icons">link</a><br>
 11:15-12:35
 </div>
 
 <div class="lesson" id="first_less_mon">
-4. ПУМ <br>
+4. ПУПМ <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 12:50-14:10
 </div>
 
@@ -184,22 +273,22 @@
 <div class="less_area" id="fri_area">
 
 <div class="lesson" id="first_less_mon">
-1. ПУМ <br>
+1. ПУПМ <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 8:00-9:20
 </div>
 
 <div class="lesson" id="second_less_mon">
-2. Практ. фонетика <br>
+2. Практ. фонетика <a href="" class="material-icons">link</a> <a href="" class="material-icons">voice_chat</a><br>
 9:35-10:55
 </div>
 
 <div class="lesson" id="third_less_mon">
-3. Істор. зарубіжної літератури <br>
+3. Істор. зарубіжної літератури <a href="" class="material-icons">link</a><br>
 11:15-12:35
 </div>
 
 <div class="lesson" id="first_less_mon">
-4. Охорона праці <br>
+4. Охорона праці <a href="" class="material-icons">link</a><br>
 12:50-14:10
 </div>
         
@@ -209,6 +298,32 @@
 #top{
 background:orange;
 } 
+
+img{
+position:absolute;
+left:0%;
+width:100%;
+height:100%;
+border-radius:10px;
+}
+
+text{
+position:absolute;
+top:106%;
+width:100%;
+left:0%;
+overflow:auto;
+padding:5px;
+
+
+max-height:120%;
+border-radius:10px;
+background:#689f38;
+/*background:#7cb342;*/
+}
+
+
+
 #lang_less{
 position:absolute;
 left:7%;
@@ -254,12 +369,25 @@ border:none;
 border-radius:5px;
 color:#fff;    
 } 
- 
- 
-  
+
+.close{
+position:absolute;
+top:1%;
+left:1%;
+width:25px;
+height:25px;
+background:#f4511e;
+outline:none;
+border:none;
+border-radius:5px;
+color:#fff;    
+}
+
+
+
 #loader{
 position:absolute;
-bottom:1%; 
+top:9%; 
 }
 
 #input{
@@ -279,7 +407,7 @@ a{
 font-size:26px;
 }
 
-aside{
+.aside{
 position:absolute;
 top:12%;
 left:5%;
@@ -289,9 +417,9 @@ background:orange;
 color:#fff;
 border-radius:5px;
 break-word:true;
-
 }
-aside::before {
+
+.aside::before {
 content: '';
 position: absolute;
 top:-3%;
@@ -301,11 +429,36 @@ height: 0;
 border-style: solid;
 border-width: 0 45px 45px 45px;
 border-color: transparent transparent orange transparent;
-transform: translateX(-20%);
-
+transform: translateX(-20%);    
+display:none;
+}   
+   
+#triangle{
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 30px;
+  border-color: green transparent transparent transparent;
+  left: 70%;
+  transform: translateX(-50%) translateY(100%);
+  display: none;
 }
 
-.day{
+
+#list_area{
+    display: none;
+    overflow-x: auto;
+}
+#news_area{
+    display: none;
+    overflow: auto;
+}
+
+
+.day{    
 position:absolute;
 left:10%;
 width:80%;
@@ -314,27 +467,28 @@ background:#33691e;
 border-radius:5px;
 font-size:20px;
 }
+
 #sun{
-top:1%;
+top:0%;
 display:none;
 }
 #mon{
-top:5%;
+top:2%;
 }
 #tue{
-top:25%;
+top:22%;
 }
 #wed{
-top:45%;
+top:42%;
 }
 #thu{
-top:65%;
+top:62%;
 }
 #fri{
-top:85%;
+top:82%;
 }
 #sat{
-top:80%;
+top:76%;
 display:none;
 }
 
@@ -347,8 +501,7 @@ height:68%;
 display:none;
 overflow:auto;
 }
-
-
+    
 .lesson{
 margin:25px;
 width:90%;
@@ -361,6 +514,56 @@ border-radius:5px;
 font-size:20px;
 overflow:auto;
 }
+#group_list_area{
+position:absolute;
+top:5%;
+width:100%;
+overflow:auto;
+}
+.group_mate{
+margin:15px;
+width:90%;
+max-height:40%;
+min-height:8%;
+text-align:center;
+background:#33691e;
+color:#fff;
+border-radius:5px;
+font-size:20px;
+overflow:auto;
+}
+
+.news_elem{
+position:absolute;
+left:5%;
+width:90%;
+height:110%;
+max-height:50%;
+/*min-height:10%;*/
+text-align:center;
+color:#fff;
+border-radius:5px;
+font-size:20px;
+word-break:true;
+background: #7cb342;
+border-radius:10px;
+}
+
+#one{
+position:absolute;
+top:7%;
+}
+#two{
+position:absolute;
+top:107%;
+min-height:70%;
+}
+#three{
+position:absolute;
+top:270%;
+}
+
+
 
 #edit{
 color: #3fb6b2;
@@ -390,24 +593,28 @@ color: #3fb6b2;
 <script>
 window.addEventListener("load", function(){
 
-
 Swal.fire({
+    position:'top',
     type: 'info',
-    title: 'Оновленя!',
-    text: "Додано секцію 'Події' та 'Список групи'"  
-})
-            
+    title: 'Привіт :)',
+    text: "Сайт підтримується своїми для своїх.",
+    timer:1000,
+    showConfirmButton: false,
 
+})
+              
 
 let loader = document.getElementById("loader")
 
 setTimeout(function(){
 loader.style.display = "none"
-},1000)
+},2000)
 
 let home = document.getElementById("home")
 let list = document.getElementById("list")
 let news = document.getElementById("news")
+let close_news = document.getElementById("close_news")
+let close_list = document.getElementById("close_list")
 
 let sun = document.getElementById("sun");
 let mon = document.getElementById("mon");
@@ -420,19 +627,23 @@ let fri = document.getElementById("fri");
 
 let sat = document.getElementById("sat");
 
+let home_area = document.getElementById("home_area")
 let mon_area = document.getElementById("mon_area")
 let tue_area = document.getElementById("tue_area")
 let wed_area = document.getElementById("wed_area")
 let thu_area = document.getElementById("thu_area")
 let fri_area = document.getElementById("fri_area")
 
-home.addEventListener("click",function(){
-mon.style.top = "5%"
-tue.style.top = "25%"
 
-wed.style.top = "45%"
-thu.style.top = "65%"
-fri.style.top = "85%"
+/*buttons block start */
+home.addEventListener("click",function(){
+
+mon.style.top = "2%"
+tue.style.top = "22%"
+
+wed.style.top = "42%"
+thu.style.top = "62%"
+fri.style.top = "82%"
 
 mon.style.animation = "show 0.5s"
 tue.style.animation = "show 0.5s"
@@ -466,9 +677,8 @@ wed_area.style.display = "none"
 thu_area.style.display = "none"
 fri_area.style.display = "none"
     
-
-// sat.style.display = "inline" 
-// sun.style.display = "inline" 
+    // sat.style.display = "inline" 
+    // sun.style.display = "inline" 
 
 },490)
 
@@ -476,31 +686,211 @@ fri_area.style.display = "none"
 
 
 
-list.addEventListener("click",function(){
-  
-  Swal.fire({
-    type: 'info',
-    title: 'Зачекай!',
-    text: "Скоро буде оновлення."  
-})  
+close_news.addEventListener("click",function(){
+
+news_area.style.display = "none"
+
+home_area.style.display = "inline"
+
+mon.style.top = "2%"
+tue.style.top = "22%"
+
+wed.style.top = "42%"
+thu.style.top = "62%"
+fri.style.top = "82%"
+
+mon.style.animation = "show 0.5s"
+tue.style.animation = "show 0.5s"
+
+wed.style.animation = "show 0.5s"
+thu.style.animation = "show 0.5s"
+
+fri.style.animation = "show 0.5s"
+sat.style.animation = "show 0.5s"
+sun.style.animation = "show 0.5s"
+
+mon_area.style.animation = "hide 0.5s"
+tue_area.style.animation = "hide 0.5s"
+wed_area.style.animation = "hide 0.5s"
+thu_area.style.animation = "hide 0.5s"
+fri_area.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+
+mon.style.display = "inline"
+tue.style.display = "inline"
+
+wed.style.display = "inline"
+thu.style.display = "inline"
+
+fri.style.display = "inline"
+
+mon_area.style.display = "none"
+tue_area.style.display = "none"
+wed_area.style.display = "none"
+thu_area.style.display = "none"
+fri_area.style.display = "none"
     
+    // sat.style.display = "inline" 
+    // sun.style.display = "inline" 
+
+},490)
+
+})
+
+close_list.addEventListener("click",function(){
+
+list_area.style.display = "none"
+
+home_area.style.display = "inline"
+
+mon.style.top = "2%"
+tue.style.top = "22%"
+
+wed.style.top = "42%"
+thu.style.top = "62%"
+fri.style.top = "82%"
+
+mon.style.animation = "show 0.5s"
+tue.style.animation = "show 0.5s"
+
+wed.style.animation = "show 0.5s"
+thu.style.animation = "show 0.5s"
+
+fri.style.animation = "show 0.5s"
+sat.style.animation = "show 0.5s"
+sun.style.animation = "show 0.5s"
+
+mon_area.style.animation = "hide 0.5s"
+tue_area.style.animation = "hide 0.5s"
+wed_area.style.animation = "hide 0.5s"
+thu_area.style.animation = "hide 0.5s"
+fri_area.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+
+mon.style.display = "inline"
+tue.style.display = "inline"
+
+wed.style.display = "inline"
+thu.style.display = "inline"
+
+fri.style.display = "inline"
+
+mon_area.style.display = "none"
+tue_area.style.display = "none"
+wed_area.style.display = "none"
+thu_area.style.display = "none"
+fri_area.style.display = "none"
+    
+    // sat.style.display = "inline" 
+    // sun.style.display = "inline" 
+
+},490)
+
+})
+
+
+
+
+
+
+
+list.addEventListener("click",function(){
+list_area.style.display = " inline" 
+home_area.style.display = "none"
+
+mon.style.top = "2%"
+tue.style.top = "22%"
+
+wed.style.top = "42%"
+thu.style.top = "62%"
+fri.style.top = "82%"
+
+mon.style.animation = "show 0.5s"
+tue.style.animation = "show 0.5s"
+
+wed.style.animation = "show 0.5s"
+thu.style.animation = "show 0.5s"
+
+fri.style.animation = "show 0.5s"
+sat.style.animation = "show 0.5s"
+sun.style.animation = "show 0.5s"
+
+mon_area.style.animation = "hide 0.5s"
+tue_area.style.animation = "hide 0.5s"
+wed_area.style.animation = "hide 0.5s"
+thu_area.style.animation = "hide 0.5s"
+fri_area.style.animation = "hide 0.5s"
+
+setTimeout(function(){
+
+mon.style.display = "inline"
+tue.style.display = "inline"
+
+wed.style.display = "inline"
+thu.style.display = "inline"
+
+fri.style.display = "inline"
+
+mon_area.style.display = "none"
+tue_area.style.display = "none"
+wed_area.style.display = "none"
+thu_area.style.display = "none"
+fri_area.style.display = "none"
+    
+    // sat.style.display = "inline" 
+    // sun.style.display = "inline" 
+
+},490)
+
+
+/*  
+#    ###Simple mode###    #
+mon.style.display = "none"
+tue.style.display = "none"
+
+wed.style.display = "none"
+thu.style.display = "none"
+
+fri.style.display = "none"
+sat.style.display = "none"    
+
+
+mon_area.style.display = "none"
+tue_area.style.display = "none"
+wed_area.style.display = "none"
+thu_area.style.display = "none"
+fri_area.style.display = "none" 
+*/ 
 })
 
 
 news.addEventListener("click",function(){
-  
-  Swal.fire({
-    type: 'info',
-    title: 'Зачекай!',
-    text: "Скоро буде оновлення."  
-})  
-    
+
+news_area.style.display = "inline"
+home_area.style.display = "none"
+
+mon.style.display = "none"
+tue.style.display = "none"
+
+wed.style.display = "none"
+thu.style.display = "none"
+
+fri.style.display = "none"
+sat.style.display = "none"    
+
+
+mon_area.style.display = "none"
+tue_area.style.display = "none"
+wed_area.style.display = "none"
+thu_area.style.display = "none"
+fri_area.style.display = "none"
+
 })
 
 
 
-
-                
 /*hide all except mon */
 mon.addEventListener("click", function(){
     
@@ -537,7 +927,7 @@ mond();
 /*hide all except tue */
 tue.addEventListener("click", function(){
 function tued(){
-tue.style.top = "5%"
+tue.style.top = "2%"
 tue_area.style.animation = "show 0.5s"
 
 mon.style.animation = "hide 0.5s"
@@ -573,7 +963,7 @@ tued();
 wed.addEventListener("click", function(){
 function wedd(){
     
-wed.style.top = "5%"
+wed.style.top = "2%"
 wed_area.style.display = "inline"
 wed_area.style.animation = "show 0.5s"
 
@@ -608,7 +998,7 @@ wedd();
 thu.addEventListener("click", function(){
 function thud(){
 
-thu.style.top = "5%"
+thu.style.top = "2%"
 thu_area.style.display = "inline"
 thu_area.style.animation = "show 0.5s"
 
@@ -643,7 +1033,7 @@ thud();
 fri.addEventListener("click", function(){
 function frid(){
     
-fri.style.top = "5%"
+fri.style.top = "2%"
 fri_area.style.display = "inline"
 fri_area.style.animation = "show 0.5s"
 
