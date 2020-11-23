@@ -50,6 +50,36 @@
       <div class="indeterminate"></div>
   </div>
 
+
+<div id="progress"></div>
+   
+ <script>
+    window.onscroll = function() {
+
+    var pos =  document.documentElement.scrollTop;
+
+    var calc_height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    var scroll = pos * 100 / calc_height;
+
+    document.getElementById("progress").style.width= scroll + "%";
+
+}      
+ </script>   
+      
+   <style>
+      #progress{
+    background-color:#F0005A;
+    width: 0;
+    height: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:9999;
+} 
+       
+   </style> 
+
 <aside class="aside" id="home_area" >    
 
 <button id="home"  class="waves-effect waves-light" ><i class="material-icons">home</i></button>
